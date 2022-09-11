@@ -6,33 +6,51 @@ import psycopg2
 PostgresCursor = NewType("PostgresCursor", psycopg2.extensions.cursor)
 PostgresConn = NewType("PostgresConn", psycopg2.extensions.connection)
 
-table_drop_events = "DROP TABLE IF EXISTS events"
-table_drop_actors = "DROP TABLE IF EXISTS actors"
+table_drop_events = "DROP TABLE IF EXISTS events CASCADE"
+table_drop_actors = "DROP TABLE IF EXISTS actors CASCADE"
+table_drop_repo = "DROP TABLE IF EXISTS repo CASADE"
+#table_drop_payload = "DROP TABLE IF EXISTS payload"
+#table_drop_org= "DROP TABLE IF EXISTS org"
 
 table_create_actors = """
     CREATE TABLE IF NOT EXISTS actors (
-        id int,
+        id text,
         login text,
+        url text,
         PRIMARY KEY(id)
     )
 """
+
+table_create_repo = """
+    CREATE TABLE IF NOT EXISTS repo (
+        id text,
+        name text,
+        url text,
+        PRIMARY KEY(id)
+    )
+"""
+
 table_create_events = """
     CREATE TABLE IF NOT EXISTS events (
         id text,
         type text,
-        actor_id int,
+        actor_id text,
+        repo_id text,
         PRIMARY KEY(id),
-        CONSTRAINT fk_actor FOREIGN KEY(actor_id) REFERENCES actors(id)
+        CONSTRAINT fk_actors FOREIGN KEY(actor_id) REFERENCES actors(id),
+        CONSTRAINT fk_repo FOREIGN KEY(repo_id) REFERENCES repo(id)
     )
 """
 
 create_table_queries = [
     table_create_actors,
-    table_create_events,
+    table_create_repo,
+    table_create_events
 ]
 drop_table_queries = [
-    table_drop_events,
     table_drop_actors,
+    table_create_repo,
+    table_drop_events
 ]
 
 
@@ -76,3 +94,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
