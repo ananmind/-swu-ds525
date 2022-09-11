@@ -3,6 +3,7 @@
 ## Getting Started
 
 ```sh
+cd 01-data-modeling-i
 python -m venv ENV
 source ENV/bin/activate
 pip install -r requirements.txt
@@ -26,6 +27,14 @@ brew install postgresql
 
 ```sh
 docker-compose up
+```
+
+```open browser to connect postgres and login: http://localhost:8080/
+ - System: PostgreSQL
+ - Server: postgres
+ - Username: postgres
+ - Password: postgres
+ - Database: postgres
 ```
 
 To shutdown, press Ctrl+C and run:
