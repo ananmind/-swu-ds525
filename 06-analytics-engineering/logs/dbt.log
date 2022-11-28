@@ -1,0 +1,27 @@
+
+
+============================== 2022-11-28 15:51:30.892665 | 056b25c8-fee0-46d2-8daf-63ecf4fd3b21 ==============================
+[0m15:51:30.892679 [info ] [MainThread]: Running with dbt=1.2.0
+[0m15:51:30.893441 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/gitpod/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:51:30.893722 [debug] [MainThread]: Tracking: tracking
+[0m15:51:30.940932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea931dbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea931d940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea931d970>]}
+[0m15:51:30.941555 [info ] [MainThread]: Creating dbt configuration folder at /home/gitpod/.dbt
+[0m15:54:25.776182 [debug] [MainThread]: Starter project path: /workspace/-swu-ds525/06-analytics-engineering/ENV/lib/python3.8/site-packages/dbt/include/starter_project
+[0m15:54:40.854504 [info ] [MainThread]: Profile marts written to /home/gitpod/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:54:40.855185 [info ] [MainThread]: 
+Your new dbt project "marts" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:54:40.855931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea7b1c340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea7b1c520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcea7b1c0a0>]}
