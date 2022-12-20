@@ -4,5 +4,3 @@
 <br>
 
 ## Project presentation
-[xxx.pdf](https://github.com/xxx.pdf)
-<br>
