@@ -12,7 +12,14 @@
 $ cat ~/.aws/credentials
 ```
 ![aws credential](https://user-images.githubusercontent.com/112712486/208808834-2556caa2-d3da-4431-ac75-73452eb8f377.jpg)
-
+- จะได้ 3 keys ดังนี้เพื่อนำไปใส่ใน code บน Github เพื่อเชื่อมต่อ AWS
+> - aws_access_key_id
+> - aws_secret_access_key
+> - aws_session_token
+### 2. นำข้อมูลขึ้นไปไว้ใน S3 โดยเปิดให้เป็น public
+![S3](https://user-images.githubusercontent.com/112712486/208809459-ffe0b5d6-f6fc-428f-8ace-0137ac2bd980.jpg)
+### 3. สร้าง Redshift โดยให้ Node type เป็น ra3.xplus และมีจำนวน 1node ตั้ง username และ password ให้เรียบร้อย และเปิดให้เป็น public
+![redshift](https://user-images.githubusercontent.com/112712486/208809606-0dc72e79-1790-4b74-9fb8-1278aa3bb4c0.jpg)
 
 ## Github
 ### 1. Change directory  
@@ -57,3 +64,22 @@ $ docker-compose up
 - Password คือ Password ที่ตั้งตอนสร้าง Redshift 
 - Port: 5439
 
+### 10.	RUN DAGs ชื่อ “Capstone”
+![Airflow](https://user-images.githubusercontent.com/112712486/208810042-a1e53ab3-5619-4273-aa30-bdda9467bd1c.jpg)
+
+## Cloud access AWS
+### 1. หลังทำการ ETL ข้อมูลเรียบร้อยแล้ว ให้เข้าไปที่ Redshift เพื่อเชื่อมต่อกับ Database 
+### 2. ทำการ Export CSV Files ออกมาเพื่อนำไปใช้งานต่อไป   
+
+## Github
+### 1.	Shutdown Docker ปิดการทำงานของ Docker
+```sh
+$ docker-compose down
+```
+### 2.	Deactivate the virtual environment
+```sh
+$ deactivate
+```
+
+## Data Visualization by PowerBI
+![powerbi](https://user-images.githubusercontent.com/112712486/208810548-deb5c506-9649-4b37-9796-7f19b16aaae7.jpg)
