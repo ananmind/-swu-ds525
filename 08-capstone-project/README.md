@@ -11,21 +11,22 @@
 ```sh
 $ cd 08-capstone-project
 ```
-<br>
+
 ### 2.	สร้าง virtual environment ชื่อ "ENV" (ในครั้งแรก)
 ```sh
 $ python -m venv ENV
 ```
-<br>
+
 ### 3.	Activate เข้าสู่ environment
 ```sh
 $ source ENV/bin/activate
 ```
-<br>
+
 ### 4. ติดตั้ง libraries ที่จำเป็น (ในครั้งแรก)
 ```sh
 $ pip install -r requirements.txt
 ```
-<br>
+
 ### 5. เตรียม code ในไฟล์ etl.py เพื่อนำเข้าข้อมูล load และ transform
-<br>
+
+### 6. 
