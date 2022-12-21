@@ -1,10 +1,10 @@
+# Capstone Project - Anchisa Sittiviriyachai 64199130077
+
 ## Project instruction
 [Project Instruction.pdf](https://github.com/ananmind/-swu-ds525/files/10274055/Project.Instruction.pdf)
-<br>
 
 ## Project presentation
 [Slide Capstone Project.pdf](https://github.com/ananmind/-swu-ds525/files/10273958/Slide.Capstone.Project.pdf)
-<br>
 
 ## Data Model
 ![data model](https://user-images.githubusercontent.com/112712486/208810901-2649eead-8679-4189-819f-2850e5af1909.jpg)
