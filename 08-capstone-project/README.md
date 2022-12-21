@@ -6,6 +6,15 @@
 [Slide Capstone Project.pdf](https://github.com/ananmind/-swu-ds525/files/10273958/Slide.Capstone.Project.pdf)
 <br>
 
+## Cloud access AWS
+### 1. Get Access Key จาก AWS
+```sh
+$ cat ~/.aws/credentials
+```
+![aws credential](https://user-images.githubusercontent.com/112712486/208808834-2556caa2-d3da-4431-ac75-73452eb8f377.jpg)
+
+
+## Github
 ### 1. Change directory  
 ```sh
 $ cd 08-capstone-project
