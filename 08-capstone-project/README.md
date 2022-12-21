@@ -4,3 +4,6 @@
 <br>
 
 ## Project presentation
+[Slide Capstone Project.pdf](https://github.com/ananmind/-swu-ds525/files/10273958/Slide.Capstone.Project.pdf)
+<br>
+
