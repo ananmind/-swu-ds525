@@ -6,6 +6,9 @@
 [Slide Capstone Project.pdf](https://github.com/ananmind/-swu-ds525/files/10273958/Slide.Capstone.Project.pdf)
 <br>
 
+## Data Model
+![data model](https://user-images.githubusercontent.com/112712486/208810901-2649eead-8679-4189-819f-2850e5af1909.jpg)
+
 ## Cloud access AWS
 ### 1. Get Access Key จาก AWS
 ```sh
